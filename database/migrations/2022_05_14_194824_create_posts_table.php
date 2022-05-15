@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('image_path');
+            $table->string('category');
             $table->string('status');
+            $table->string('pined');
             $table->integer('no_of_comment');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
